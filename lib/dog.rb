@@ -25,7 +25,8 @@ class Dog
     
     def self.print_all
         # binding.pry
-        @@all.map(&:name).each { |name| puts name }
+        # @@all.map(&:name).each { |name| puts name }
+        self.all.each{ |dog| puts "#{dog.name}" }
     end
 end
 
